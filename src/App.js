@@ -16,6 +16,8 @@ import SignUp from './pages/user/signup';
 // import SignUp from './pages/user/signup';
 import Batch from './pages/admin/batch/Batch';
 import SubscriptionRC from "./pages/admin/batch/Components/Subscriptions/SubscriptionRC";
+import Logs from "./pages/admin/Logs";
+import {setAuthToken} from "./pages/user/AuthToken";
 
 
 function App() {
@@ -35,6 +37,8 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path="/batch" element={<Batch />} />
+          <Route path="/log" element={<Logs />} />
+
       </Routes>
       <Footer />
 

@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FaTimes } from 'react-icons/fa';
-import { RxHamburgerMenu } from 'react-icons/rx';
-
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { RxHamburgerMenu } from "react-icons/rx";
+import { FaTimes } from 'react-icons/fa'
+import Login from '../pages/user/Login';
+import Logs from '../pages/admin/Logs'
+import SignUp from '../pages/user/signup';
 function Navbar() {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
@@ -41,7 +43,7 @@ function Navbar() {
         <Link to='/'><li className='hover:text-teal-700'>Home</li></Link>
         <Link to='/markets'><li className='hover:text-teal-700'>Market Overview</li></Link>
         <Link to='/subscription'><li className='hover:text-teal-700'>Subscriptions</li></Link>
-        <Link to='/SubscriptionRC'><li className='hover:text-teal-700'>SubscriptionAdmin</li></Link>
+        <Link to='/subscriptions/all-subscriptions'><li className='hover:text-teal-700'>SubscriptionAdmin</li></Link>
         <Link to='/user'><li className='hover:text-teal-700'>User</li></Link>
         <Link to='/profile'><li className='hover:text-teal-700'>Profile</li></Link>
         <Link to='/wallet'><li className='hover:text-teal-700'>Wallet</li></Link>
