@@ -12,7 +12,7 @@ instance.interceptors.request.use(
     load++;
     document.body.classList.add("loading-indicator");
 
-    const token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMzg0NTU0NCwiYXV0aCI6IlJPTEVfQURNSU4gUk9MRV9VU0VSIiwiaWF0IjoxNzMzNzU5MTQ0fQ.sFqm1ROyJDSTfqLUf3a_FEFxTOLvWXjBt_wmfSXopBrGjE8-8Q9eoSSele6BRUMPaHWpQJHA-Yff2Je5l6YhlA";
+    const token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzMzOTc0NTc3LCJhdXRoIjoiUk9MRV9VU0VSIiwiaWF0IjoxNzMzODg4MTc3fQ.pkOZQKpFecBF4jn61IddjjuBi1cUXAVraC1t6eWQnH_O340VWuV7S75s0vvMoz6fkUEhFNStSNIvhreqcPRPkg";
     let t1 = "Bearer " + token;
     // let t1 = token
     if (token) {
